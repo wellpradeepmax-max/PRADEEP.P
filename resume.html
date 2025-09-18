@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Your Name</title>
+  <style>
+    :root{--accent:#0f766e;--muted:#6b7280;--bg:#f8fafc;--card:#ffffff}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f172a}
+    .container{max-width:900px;margin:32px auto;padding:28px;display:grid;grid-template-columns:1fr 320px;gap:28px}
+    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0ea5a3);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:22px}
+    h2{margin:0;font-size:16px;color:var(--accent)}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .section{margin-top:18px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .meta div{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+    .experience .item{margin-top:12px}
+    .item .title{font-weight:600}
+    .item .period{float:right;color:var(--muted);font-size:13px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#eef2f7;padding:6px 10px;border-radius:999px;font-size:13px;color:#0f172a}
+    .sidebar .card{padding:18px}
+    .contact a{color:var(--accent);text-decoration:none}
+    @media (max-width:880px){.container{grid-template-columns:1fr; padding:18px}.sidebar{order:2}}
+    /* Print-friendly */
+    @media print{body{background:white} .container{box-shadow:none;max-width:100%} .avatar{background:#000;color:#fff} a::after{content:""}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="card">
+      <header>
+        <div class="avatar">YN</div>
+        <div>
+          <h1>Your Name</h1>
+          <h2>Job Title — e.g., Senior .NET Developer</h2>
+          <p class="lead">Concise professional summary: 2–3 lines that describe what you do, your strengths and what you bring to a team. Replace with your own text.</p>
+          <div class="meta">
+            <div>📍 City, Country</div>
+            <div>✉️ <a href="mailto:you@example.com">you@example.com</a></div>
+            <div>🔗 <a href="#">portfolio.example.com</a></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section experience">
+        <h3>Professional Experience</h3>
+        <article class="item">
+          <div>
+            <span class="title">Senior .NET Developer — Company ABC</span>
+            <span class="period">Jan 2023 — Present</span>
+          </div>
+          <div style="clear:both"></div>
+          <p class="lead" style="margin-top:6px">Short description of role and impact. Use bullet-style sentences (one-line) to highlight achievements.</p>
+          <ul>
+            <li>Built and maintained RESTful APIs using ASP.NET Core and Entity Framework.</li>
+            <li>Improved query performance, reducing response time by 35% via indexing and SQL tuning.</li>
+            <li>Led a 4-person team; introduced CI/CD pipelines with GitHub Actions.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div>
+            <span class="title">Software Developer — Company XYZ</span>
+            <span class="period">Jul 2020 — Dec 2022</span>
+          </div>
+          <div style="clear:both"></div>
+          <p class="lead" style="margin-top:6px">Brief bullets showing responsibilities and achievements.</p>
+          <ul>
+            <li>Designed modular components in C# and improved test coverage to 85%.</li>
+            <li>Collaborated with frontend team (Angular) to deliver new student management system.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section projects">
+        <h3>Selected Projects</h3>
+        <div class="item">
+          <strong>College Management System</strong>
+          <p class="lead">Full-stack app using Angular, .NET Core API and MS SQL. Implemented role-based auth and reporting features.</p>
+        </div>
+      </section>
+
+      <section class="section education">
+        <h3>Education</h3>
+        <div class="item">
+          <div>
+            <span class="title">B.Sc. in Computer Science — University Name</span>
+            <span class="period">2016 — 2019</span>
+          </div>
+          <div style="clear:both"></div>
+          <p class="lead">Relevant coursework: Data Structures, DBMS, Software Engineering.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h3>Skills</h3>
+        <div class="skills" style="margin-top:10px">
+          <span class="chip">C#</span>
+          <span class="chip">ASP.NET Core</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Entity Framework</span>
+          <span class="chip">Angular</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Azure</span>
+        </div>
+
+        <div class="section contact">
+          <h3 style="margin-top:16px">Contact</h3>
+          <p style="margin:6px 0">Phone: +91-XXXXXXXXXX</p>
+          <p style="margin:6px 0">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p style="margin:6px 0">LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+        </div>
+
+        <div class="section">
+          <h3>Certifications</h3>
+          <ul style="margin:6px 0 0 18px;color:var(--muted);">
+            <li>Microsoft Certified: Azure Fundamentals</li>
+            <li>Scrum Master (PSM I)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Languages</h3>
+          <p class="lead">English (Professional), Tamil (Native), Hindi (Conversational)</p>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+
+  <!-- Quick print button -->
+  <div style="position:fixed;right:18px;bottom:18px">
+    <button onclick="window.print()" style="background:var(--accent);border:none;color:white;padding:10px 14px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.12);cursor:pointer">Print / Save PDF</button>
+  </div>
+</body>
+</html>
